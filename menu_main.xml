@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp">
+
+    <ImageView
+        android:id="@+id/androidBanner"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/android"
+        />
+
+    <TextView
+        android:id="@+id/androidButton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/bt_main_menu"
+        android:onClick="onButtonClick"
+        android:paddingVertical="5dp"
+        android:text="@string/bt_android_course"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/androidBanner" />
+
+
+    <ImageView
+        android:id="@+id/iosBanner"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:layout_constraintTop_toBottomOf="@id/androidButton"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/ios"
+        />
+
+    <TextView
+        android:id="@+id/iosButton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/bt_main_menu"
+        android:onClick="onButtonClick"
+        android:paddingVertical="5dp"
+        android:text="@string/bt_ios_course"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/iosBanner" />
+
+    <ImageView
+        android:id="@+id/FSBanner"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:layout_constraintTop_toBottomOf="@id/iosButton"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/full_stack"
+        />
+
+    <TextView
+        android:id="@+id/FSButton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/bt_main_menu"
+        android:onClick="onButtonClick"
+        android:paddingVertical="5dp"
+        android:text="@string/bt_fs_course"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/FSBanner" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
